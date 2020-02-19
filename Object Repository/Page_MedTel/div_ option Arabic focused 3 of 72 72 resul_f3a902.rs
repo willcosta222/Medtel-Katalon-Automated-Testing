@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_ option Arabic focused 3 of 72 72 resul_f3a902</name>
+   <tag></tag>
+   <elementGuidId>915c0e04-dbd4-424c-8670-dc38e1bbe467</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='SN-PRIM-LANG']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>css-1pcexqc-container</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>   option Arabic focused, 3 of 72. 72 results available. Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu, press Tab to select the option and exit the menu.Primary LanguageAfrikaansAlbanianArabicArmenianBasqueBengaliBulgarianCambodianCatalanChinese (Mandarin)CroatianCzechDanishDutchEnglishEstonianFijiFinnishFrenchGeorgianGermanGreekGujaratiHebrewHindiHungarianIcelandicIndonesianIrishItalianJapaneseJavaneseKoreanLatvianLithuanianMaithiliMalayMalayalamMalteseMaoriMarathiMongolianNepaliNorth MacedonianNorwegianPersianPolishPortuguesePunjabiQuechuaRomanianRussianSamoanSerbianSlovakSlovenianSpanishSwahiliSwedishTamilTatarTeluguThaiTibetanTongaTurkishUkrainianUrduUzbekVietnameseWelshXhosa</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;SN-PRIM-LANG&quot;)/div[@class=&quot;jss1012&quot;]/div[@class=&quot;css-1pcexqc-container&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='SN-PRIM-LANG']/div/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Special Needs'])[1]/following::div[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[18]/following::div[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div</value>
+   </webElementXpaths>
+</WebElementEntity>
