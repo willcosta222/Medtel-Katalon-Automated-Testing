@@ -15,3 +15,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://stage.medtel.com')
+
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'thomas.youm@nycmc.org')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
+
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login (1)'))
+
+CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
+
+CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNumber, true)
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/button_Cancel Case'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/button_Yes'))
+
+WebUI.verifyElementNotClickable(findTestObject('Page_MedTel/button_Cancel Case'))
+
+WebUI.verifyElementNotClickable(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/img_Connect_header-logo'))
+
+CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
+
+CustomKeywords.'medtel.utilities.utilities.confirmCaseCanceled'(GlobalVariable.CaseNum2)
+

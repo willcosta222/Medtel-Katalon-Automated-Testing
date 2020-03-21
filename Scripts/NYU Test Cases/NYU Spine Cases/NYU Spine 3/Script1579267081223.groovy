@@ -20,117 +20,117 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://patch-stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/input_Email_email'), 'cathy@rycortho.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
 
-WebUI.setEncryptedText(findTestObject('Page_MedTel/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
+WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
-WebUI.click(findTestObject('Page_MedTel/span_Login'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
-WebUI.click(findTestObject('Page_MedTel/button_New Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PD-MRN'), '98765')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '98765')
 
-WebUI.click(findTestObject('Page_MedTel/div_Primary Surgeon_jss765'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
 
-WebUI.click(findTestObject('Page_MedTel/div_Site_jss765'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss765'))
 
-WebUI.setText(findTestObject('Page_MedTel/input_Site_react-select-3-input'), 'spine')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'spine')
 
-WebUI.click(findTestObject('Page_MedTel/div_Spine'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/span_Create Case'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PD-DOB'), '04/03/1965')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '04/03/1965')
 
-WebUI.click(findTestObject('Page_MedTel/div_Insurance Type_NYU'))
+WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
-WebUI.click(findTestObject('Page_MedTel/div_OTHER'))
+WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_OTHER'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Surgical Location'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Page_MedTel/div_NYU Kimmel Pavilion'))
+WebUI.click(findTestObject('Page_MedTel/NYU/NYU Surgical Location/div_NYU Kimmel Pavilion'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PRD-PROD'), 'fusion scolios')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'fusion scolios')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_FUSION SCOLIOSIS SPINE THORACO LUMBAR P_ccb09b'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_FUSION SCOLIOSIS SPINE THORACO LUMBAR P_ccb09b'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PRD-CPT'), '22802')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22802')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_22802 - Arthrodesis posterior for spina_0e6d7e'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_22802 - Arthrodesis posterior for spina_0e6d7e'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PRD-CPT'), '22848')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22848')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_22848 - Pelvic fixation (attachment of _c4536a'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_22848 - Pelvic fixation (attachment of _c4536a'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__PRD-CPT'), '22843')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22843')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_22843 - Posterior segmental instrumenta_ea1c24'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_22843 - Posterior segmental instrumenta_ea1c24'))
 
-WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU Spine/Patient Position 1 NYU Spine'))
+WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Patient Position 1 Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU Spine/Patient_Position_Unknown_NYU_Spine'))
+WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Patient_Position_Unknown'))
 
-WebUI.click(findTestObject('Page_MedTel/Bed Types NYU Spine/Bed Type 1'))
+WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed Type 1'))
 
-WebUI.click(findTestObject('Page_MedTel/Bed Types NYU Spine/Bed_Type_Unknown_NYU_SPine'))
+WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed_Type_Unknown_NYU_SPine'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Implant Type_jss987'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implant Type_jss987'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Fixation'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Fixation'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__IMP-DESC'), 'xia spinal')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'), 'xia spinal')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Xia Spinal System - Stryker - Matthew M_e82cee'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Xia Spinal System - Stryker - Matthew M_e82cee'))
 
-WebUI.click(findTestObject('Page_MedTel/div_From_jss987'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_From_jss987'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_T10'))
+WebUI.click(findTestObject('Page_MedTel/MST/MST Spine From-To/div_T10'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_T10_1'))
+WebUI.click(findTestObject('Page_MedTel/MST/MST Spine From-To/div_T12'))
 
-WebUI.click(findTestObject('Page_MedTel/div_To_jss987'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_To_jss987'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_To_react-select-14-input'), 'pel')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_To_react-select-14-input'), 'pel')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Pelvis'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Pelvis'))
 
-WebUI.click(findTestObject('Page_MedTel/button_Add Implant'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Add Implant'))
 
-WebUI.click(findTestObject('Page_MedTel/span_Confirm Implants Added'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Implants Added'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-BONE'), 'cancell')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-BONE'), 'cancell')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Cancellous Chip Allograft'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Cancellous Chip Allograft'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__IMP-MONITOR'), 'fluo')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-MONITOR'), 'fluo')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Fluo'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Fluo'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__IMP-MONITOR'), 'mep/s')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-MONITOR'), 'mep/s')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_MEPSSEP'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_MEPSSEP'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__IMP-ANC'), 'cell sav')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'cell sav')
 
-WebUI.click(findTestObject('Page_MedTel/div_CELL SAVER'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_CELL SAVER'))
 
-WebUI.setText(findTestObject('Page_MedTel/input__IMP-ANC'), 'jackson')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'jackson')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Jackson Cradle'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Jackson Cradle'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Copy to EMR'))
 
-WebUI.click(findTestObject('Page_MedTel/span_Confirm Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Copy to EMR'))
 
-WebUI.click(findTestObject('Page_MedTel/span_Save Case'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Save Case'))
 
 WebUI.closeBrowser()
 

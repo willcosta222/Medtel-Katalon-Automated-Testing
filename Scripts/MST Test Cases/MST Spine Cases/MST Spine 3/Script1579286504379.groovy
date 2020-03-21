@@ -18,135 +18,152 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://patch-stage.medtel.com/login')
+WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_Email_email'), 'cathys@comcllc.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
+WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Login'))
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/button_New Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PD-FN'), 'Tim')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-FN'), 'Tim')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PD-LN'), 'Cook')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-LN'), 'Cook')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PD-DOB'), '07/03/1990')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '07/03/1990')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Primary Surgeon_jss803'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Daigneault (Stage-MS) John'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Site_jss803'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss803'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_Site_react-select-3-input'), 'spine')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'spine')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Spine'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/button_Create Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Create Case'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_First NameMiddle NameLast NameDate Of B_4e1c68'))
+GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Page_MedTel/span-p-li-misc/Case Number'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Gender_jss1014'))
+GlobalVariable.CaseDate = WebUI.getText(findTestObject('Page_MedTel/span-p-li-misc/Case Date'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_M'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_First NameMiddle NameLast NameDate Of B_4e1c68'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_State_jss1014'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Gender_jss1014'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_State_react-select-10-input'), 'new york')
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_M'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_New York'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_State_jss1014'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__CONT-ADD1'), '123 address')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_State'), 'new york')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__CONT-CITY'), 'new york')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/States/div_New York'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__CONT-ZIP'), '10016')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__CONT-ADD1'), '123 address')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__CONT-MOB'), '(555) 555-5555')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__CONT-CITY'), 'new york')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Financial'))
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__CONT-ZIP'), '10016')
 
-WebUI.click(findTestObject('Page_MedTel/div_Insurance Type_MST'))
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__CONT-MOB'), '(555) 555-5555')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_SELF PAY'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Financial'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Does Patient have Secondary Insurance_jss1014'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Insurance Types/MST Insurance/div_Insurance Type_MST'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_No'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Insurance Types/div_SELF PAY'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Does Patient have Secondary Insurance_jss1014'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Surgical Location'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Yes-No Options/div_No'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_MidState Medical Center'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRD-CPT'), '22558')
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_22558 - Arthrodesis anterior interbody _852ab9'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_MidState Medical Center'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRD-DS'), 's32')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22558')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_S32 - FRACTURE OF LUMBAR SPINE AND PELVIS'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_22558 - Arthrodesis anterior interbody _852ab9'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRD-DS'), 's33')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-DS'), 's32')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_S33 - DISLOCATION AND SPRAIN OF JOINTS _e012c9'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_S32 - FRACTURE OF LUMBAR SPINE AND PELVIS'))
 
-WebUI.click(findTestObject('Page_MedTel/Input_Anesthesia'))
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-DS'), 's33')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Spinal'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_S33 - DISLOCATION AND SPRAIN OF JOINTS _e012c9'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Admission Type'))
+WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Patient Position 1 Spine'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Outpatient (Same Day)'))
+WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Patient_Position_Prone'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Bed Type 1 Spine'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__SCH-TIME'), '10:30 aM')
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/li_STILLE AB imagiQ'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Implants and Products'))
+CustomKeywords.'medtel.utilities.utilities.addPositionBedType'(findTestObject('Page_MedTel/Patient Positions NYU and MST Spine/Patient_Position_Supine'), 
+    findTestObject('Page_MedTel/span-p-li-misc/li_Maquet Meera Mobile Operating Table'), '2')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Implant Type_jss1046'))
+WebUI.click(findTestObject('Page_MedTel/INPUTS/input__jss978 jss1084'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Interbody'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/Input_Anesthesia'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/input__IMP-DESC'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_General'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_4WEB Anterior Spine Truss System (ALIF _d11b31'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Admission Type'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Approach_Spine'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Outpatient (Same Day)'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_ALIF'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_From_jss1046'))
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '10:30 aM')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_C4'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_To_jss1046'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implant Type_jss1046'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_C8'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Interbody'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/button_Add Implant'))
+WebUI.click(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Confirm Implants Added'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_4WEB Anterior Spine Truss System (ALIF _d11b31'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Clinical'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Approach_Spine'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRE-OP-PHY-FN'), 'Tom')
+WebUI.click(findTestObject('Page_MedTel/MST/MST Spine Approach/div_ALIF'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRE-OP-PHY-LN'), 'Jones')
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_From_jss1046'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRE-OP-PHY-PN'), '(222) 222-2222')
+WebUI.click(findTestObject('Page_MedTel/MST/MST Spine From-To/div_C4'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Pre-admission Testing at Midstate Medic_8aeb6d'))
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_To_jss1046'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Yes'))
+WebUI.click(findTestObject('Page_MedTel/MST/MST Spine From-To/div_C8'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/button_Save Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Add Implant'))
+
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Implants Added'))
+
+WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Clinical'))
+
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRE-OP-PHY-FN'), 'Tom')
+
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRE-OP-PHY-LN'), 'Jones')
+
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRE-OP-PHY-PN'), '(222) 222-2222')
+
+WebUI.click(findTestObject('Page_MedTel/DIVs/div_Pre-admission Testing at Midstate Medic_8aeb6d'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Yes-No Options/div_Yes'))
+
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 
 WebUI.closeBrowser()
 

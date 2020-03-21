@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Patient Primary InsuranceInsurance Type_f48191</name>
+   <tag></tag>
+   <elementGuidId>3d679b1f-38f2-4b8f-a499-116c34ffa0ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jss1717</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient Primary InsuranceInsurance TypePRIVATE INSURANCE COMPANYPrivate Insurance DetailsAARPPrivate Insurance Address 1​Private Insurance Address 2​Private Insurance City​Private Insurance StatePrivate Insurance Zip​Private Insurance Phone Number​Policy Number​Group Name/Number​Insurance Authorization Provided?NoInsurance Authorization Number​Policy Holder (Primary)Policy HolderPatientPolicy Holder Employer​Policy Holder Employer CountryUnited StatesPolicy Holder Employer StatePolicy Holder Employer Address 1​Policy Holder Employer Address 2​Policy Holder Employer City​Policy Holder Employer Zip​Policy Holder Employer Primary Phone Number​Secondary InsuranceDoes Patient have Secondary Insurance? (Secondary)YesInsurance Type (Secondary)AUTO INSURANCEAuto Insurance or No Fault (Secondary)Auto Insurance Name (Secondary)​Auto Insurance or No Fault Country (Secondary)United StatesAuto Insurance or No Fault State (Secondary)Auto Insurance or No Fault Address 1 (Secondary)​Auto Insurance or No Fault Address 2 (Secondary)​Auto Insurance or No Fault City (Secondary)​Auto Insurance or No Fault Zip (Secondary)​Auto Accident Date (MM/DD/YYYY) (Secondary)​  Auto Accident Time (Secondary)​Claim Number (Secondary)​Auto Claim Adjuster Name (Secondary)​Auto Claim Adjuster Phone (Secondary)​Auto Claim Adjuster Phone Extension (Secondary)​Auto Claim Adjuster Fax (Secondary)​Insurance Authorization Provided? (Secondary)YesInsurance Authorization Number (Secondary)​Policy Holder (Secondary)Policy Holder (Secondary)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;jss373 sc-htoDjs gOIOCa&quot;]/div[@class=&quot;jss373 jss396 jss386 jss390&quot;]/div[@class=&quot;jss373 jss374 jss382 jss390 jss410&quot;]/div[@class=&quot;jss298 jss301 jss299 jss1672&quot;]/div[@class=&quot;jss1717&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save Case'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel Case'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

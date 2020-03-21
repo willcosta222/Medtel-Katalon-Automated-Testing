@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>test case number </description>
+      <initValue>'xxxxx'</initValue>
+      <name>CaseNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'yyyyy'</initValue>
+      <name>CaseDate</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'zzzzz'</initValue>
+      <name>CaseNum2</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

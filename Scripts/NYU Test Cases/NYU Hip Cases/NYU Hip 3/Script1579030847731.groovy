@@ -18,111 +18,111 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://patch-stage.medtel.com/login')
+WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_Email_email'), 'cathy@rycortho.com')
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Login'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_New Case'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_New Case'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PD-MRN'), '643354')
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PD-MRN'), '643354')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Primary Surgeon_jss765'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/NYU/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Site_jss765'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Site_jss765'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input_Site_react-select-3-input'), 'hip')
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'hip')
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Hip'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Hip'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Create Case'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PD-DOB'), '07/19/1948')
+GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/Case Number'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Gender_jss987'))
+GlobalVariable.CaseDate = WebUI.getText(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/Case Date'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_M'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PD-DOB'), '07/19/1948')
 
-WebUI.click(findTestObject('Page_MedTel/div_Feet_css-amjubi-indicatorContainer'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Gender_jss987'))
 
-WebUI.click(findTestObject('Page_MedTel/Height-Feet Drop Down Menu/div_5_feet'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_M'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Inches_css-amjubi-indicatorContainer'))
+CustomKeywords.'medtel.utilities.utilities.inputHeight'('5', '10')
 
-WebUI.click(findTestObject('Page_MedTel/Height-inches Drop Down Menu/div_10_inches'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/Height and Weight/input__Weight'), '209')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__jss951 jss936'), '0209')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Insurance Type_NYU'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Insurance Types/div_MEDICARE'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_MEDICARE'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Procedure Details'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Procedure Details'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Surgical Location'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/NYU/NYU Surgical Location/div_NYU Langone Orthopedic Hospital (LOH)'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_NYU Langone Orthopedic Hospital (LOH)'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PRD-PROD'), 'arthroplasty hip ')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRD-PROD'), 'arthroplasty hip ')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_HIP'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_HIP'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PRD-CPT'), '27130')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__PRD-CPT'), '27130')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_27130 - Arthroplasty acetabular and pro_dd70c6'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_27130 - Arthroplasty acetabular and pro_dd70c6'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Approach_Hip'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Approach_Hip'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Hip Approach/div_Anterior'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Anterior'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Hip Laterality/div_Laterality'))
 
-WebUI.click(findTestObject('Page_MedTel/div_Laterality'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Right'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/div_Right'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Implants and Products'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Implants and Products'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-DESC'), 'anthology hip ')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-DESC'), 'anthology hip ')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_System (Stem) - Smith  Nephew - Larr_43b284'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_System (Stem) - Smith  Nephew - Larr_43b284'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-DESC'), 'biolox delta ceramic femoral head - djo')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-DESC'), 'biolox delta ceramic femoral head')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_- Stryker - Shelby Dapuzzo (Stage-NY_5a8d22'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_- Stryker - Shelby Dapuzzo (Stage-NY_5a8d22'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-DESC'), 'r3 multi hole acetabular')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-DESC'), 'r3 multi hole acetabular')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_Shell - Smith  Nephew - Larry Astwoo_a302b4'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_Shell - Smith  Nephew - Larry Astwoo_a302b4'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-DESC'), 'synergy short')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-DESC'), 'synergy short')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_Stem - Smith  Nephew - Larry Astwood_4d2e46'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_Stem - Smith  Nephew - Larry Astwood_4d2e46'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Confirm Implants Added'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Confirm Implants Added'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-ANC'), 'MIS retra')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-ANC'), 'MIS retra')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_ctors - Stryker'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_ctors - Stryker'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-ANC'), 'R3 MIS in')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-ANC'), 'R3 MIS in')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_struments - Anterior approach reamer_40254c'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_struments - Anterior approach reamer_40254c'))
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__IMP-ANC'), 'omni trac')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/input__IMP-ANC'), 'omni trac')
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/strong_Femoral Elevator'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/strong_Femoral Elevator'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Copy to EMR'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Copy to EMR'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Confirm Copy to EMR'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Confirm Copy to EMR'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/BUTTONS/button_Save Case'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/span_Save Case'))
+WebUI.waitForPageLoad(5)
 
 WebUI.closeBrowser()
 
