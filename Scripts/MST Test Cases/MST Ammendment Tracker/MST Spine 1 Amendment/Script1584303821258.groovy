@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Page_MedTel/INPUTS/input__SN-SPECIAL-NEEDS-OPTS'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Hearing impaired'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/INPUTS/input__jss1076 jss1061'))
 
@@ -54,7 +54,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__jss1076 jss1061'), 'ald'
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Aldrich (Stage-MS) Keith - Orthopedics'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22612')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '22612')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_22612 - Arthrodesis posterior or poster_8024e4'))
 
@@ -76,7 +76,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_MAC'))
 
 CustomKeywords.'medtel.utilities.utilities.removeAnesthesia'('BB')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-BONE'), 't biofix')
 

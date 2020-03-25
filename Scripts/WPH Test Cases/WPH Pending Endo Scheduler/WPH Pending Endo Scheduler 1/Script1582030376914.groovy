@@ -28,17 +28,17 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-FN'), 'John')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-FN'), 'John')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-LN'), 'Smith')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-LN'), 'Smith')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '09/10/1990')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '09/10/1990')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Proceduralist_jss707'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Antonelle (Stage-WPH) Robert'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_ENDO'))
 
@@ -90,17 +90,17 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Does Patient have Secondary Ins
 
 WebUI.click(findTestObject('Page_MedTel/Yes-No Options/div_No_INS-HAS-SEC-INS'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Location_jss1024'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_White Plains Hospital'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), '')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), '')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Colonoscopy'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '45379')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '45379')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_45379 - Colonoscopy flexible with remov_2df904'))
 
@@ -116,15 +116,15 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Admission Type_jss1024'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Outpatient'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-WebUI.click(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'))
+WebUI.click(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '09:00 AM')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '09:00 AM')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PRD-LENGTH'), '90')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PRD-LENGTH'), '90')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'c-arm')
 

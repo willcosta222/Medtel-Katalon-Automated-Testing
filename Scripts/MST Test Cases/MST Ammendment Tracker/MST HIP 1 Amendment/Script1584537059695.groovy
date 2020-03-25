@@ -26,21 +26,19 @@ WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_passwor
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Login'))
 
-WebUI.doubleClick(findTestObject('Page_MedTel/BUTTONS/button_'))
-
 CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
 
 CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNumber, true)
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Amend Case'))
 
-CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/INPUTS/input__PD-MN'))
+CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/Demographics/input__PD-MN'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MN'), 'James')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MN'), 'James')
 
-CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'))
+CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/Demographics/input__PD-MRN'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '1234')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '1234')
 
 CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/INPUTS/input__SN-F-NUMBER'))
 
@@ -82,13 +80,13 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_'))
 
 WebUI.setText(findTestObject('Page_MedTel/span-p-li-misc/textarea__PRD-NOTE'), 'PROCEDURE TEST')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'))
+CustomKeywords.'medtel.utilities.utilities.clearTextField'(findTestObject('Page_MedTel/Schedule/input__SCH-PD'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '01/31/2021')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '01/31/2021')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '10:00 AM')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:00 AM')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-AD-DT'), '12/31/2020')
 

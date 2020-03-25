@@ -28,13 +28,13 @@ WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Lo
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_New Case'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PD-MRN'), '643354')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '643354')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/NYU/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Site_jss765'))
 
@@ -48,7 +48,7 @@ GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Object Repository/Page
 
 GlobalVariable.CaseDate = WebUI.getText(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/Case Date'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PD-DOB'), '07/19/1948')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '07/19/1948')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Gender_jss987'))
 
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_M'))
 
 CustomKeywords.'medtel.utilities.utilities.inputHeight'('5', '10')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/Height and Weight/input__Weight'), '209')
+WebUI.setText(findTestObject('Page_MedTel/Stats - Height and Weight/input__Weight'), '209')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
@@ -66,21 +66,21 @@ WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Pr
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/NYU/NYU Surgical Location/div_NYU Langone Orthopedic Hospital (LOH)'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Surgical Location/div_NYU Langone Orthopedic Hospital (LOH)'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PRD-PROD'), 'arthroplasty hip ')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'arthroplasty hip ')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_HIP'))
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input__PRD-CPT'), '27130')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '27130')
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_27130 - Arthroplasty acetabular and pro_dd70c6'))
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Approach_Hip'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Hip Approach/div_Anterior'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Approach/div_Anterior'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Hip Laterality/div_Laterality'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality'))
 
 WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Right'))
 
@@ -123,6 +123,10 @@ WebUI.click(findTestObject('Object Repository/Page_MedTel/span-p-li-misc/span_Co
 WebUI.click(findTestObject('Object Repository/Page_MedTel/BUTTONS/button_Save Case'))
 
 WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.closeBrowser()
 

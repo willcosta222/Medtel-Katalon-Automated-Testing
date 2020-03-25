@@ -28,17 +28,17 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-FN'), 'Jane')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-FN'), 'Jane')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-LN'), 'Doe')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-LN'), 'Doe')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '04/08/1987')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '04/08/1987')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Proceduralist_jss707'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Antonelle (Stage-WPH) Robert'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_ENDO'))
 
@@ -112,27 +112,27 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_ option AUTO INSURANCE focused 
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_SELF PAY'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Location_jss1024'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_White Plains Hospital'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'flexible ')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'flexible ')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Flexible Sigmoidoscopy'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'dilation')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'dilation')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Dilation'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_ProcedureProcedureFlexible Sigmoidoscop_9ce48d'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '45379')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '45379')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_45379 - Colonoscopy flexible with remov_2df904'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '45340')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '45340')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_45340 - Sigmoidoscopy flexible with tra_50b2a3'))
 
@@ -158,11 +158,11 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Admission Bed_jss1024'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure to be done in OR'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-WebUI.click(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '09:00 AM')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '09:00 AM')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Implants and Products'))
 

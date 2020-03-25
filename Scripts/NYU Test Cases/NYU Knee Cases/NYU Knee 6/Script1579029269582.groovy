@@ -28,13 +28,13 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '6786585')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '6786585')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss765'))
 
@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Knee'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '01/05/1949')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '01/05/1949')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Gender_jss987'))
 
@@ -52,11 +52,11 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_M'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Feet_css-amjubi-indicatorContainer'))
 
-WebUI.click(findTestObject('Page_MedTel/Height and Weight/Height-Feet Drop Down Menu/div_5_feet'))
+WebUI.click(findTestObject('Page_MedTel/Stats - Height and Weight/Height-Feet Drop Down Menu/div_5_feet'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Inches_css-amjubi-indicatorContainer'))
 
-WebUI.click(findTestObject('Page_MedTel/Height and Weight/Height-inches Drop Down Menu/div_9_inches'))
+WebUI.click(findTestObject('Page_MedTel/Stats - Height and Weight/Height-inches Drop Down Menu/div_9_inches'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__jss951 jss936'), '232')
 
@@ -64,27 +64,27 @@ WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU')
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_MEDICARE'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_NYU Langone Orthopedic Hospital (LOH)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'arthroplasty makopl')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'arthroplasty makopl')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_ARTHROPLASTY MAKOPLASTY KNEE TOTAL'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '27447')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '27447')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_27447 - Arthroplasty knee condyle and p_ed80cb'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Laterality/div_Laterality'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality'))
 
-WebUI.setText(findTestObject('Page_MedTel/Hip Laterality/input_Laterality_react-select-11-input'), 'ri')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/Hip Laterality/input_Laterality_react-select-11-input'), 'ri')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Right'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'), 'triathlon ps k')
 
@@ -100,7 +100,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'verasense')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_VERASENSE (Knee) - OrthoSensor - Herman_d81ad8'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Copy to EMR'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/label_Confirm Copy to EMR'))
 

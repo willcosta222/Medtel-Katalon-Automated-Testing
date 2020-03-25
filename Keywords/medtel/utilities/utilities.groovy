@@ -55,7 +55,7 @@ public class utilities {
 		months.put("12","Dec")
 
 		//Read and Format Calendar Date from Medtel Calendar
-		String CalendarDate = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+		String CalendarDate = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 		CalendarDate = CalendarDate.replaceAll('\\s','')
 		String year = CalendarDate.substring(CalendarDate.length() - 2, CalendarDate.length())
 		String month = CalendarDate.substring(0, 3)
@@ -66,26 +66,26 @@ public class utilities {
 		System.out.println(CaseYear)
 		// Check For Correct Year
 		while (year != CaseYear) {
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_YearForward'))
+			WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button_YearForward'))
 
-			String new_date = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+			String new_date = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 			year = new_date.substring(new_date.length() - 2, new_date.length())
 		}
 
 		String Casemonths = months.get(CaseMonth)
 		while (month != Casemonths) {
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__MonthForward'))
+			WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__MonthForward'))
 
-			String new_date = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+			String new_date = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 
 			year = new_date.substring(new_date.length() - 2, new_date.length())
 
 			month = new_date.substring(0, 3)
 		}
 		if (year != CaseYear) {
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__YearBackward'))
+			WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__YearBackward'))
 		}
-		TestObject new_btn = WebUI.modifyObjectProperty(findTestObject('Page_MedTel/BUTTONS/button_31'), 'xpath', 'equals', '//abbr[text()="'+CaseDay+'"]', true)
+		TestObject new_btn = WebUI.modifyObjectProperty(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDay'), 'xpath', 'equals', '//abbr[text()="'+CaseDay+'"]', true)
 		WebUI.click(new_btn)
 		return
 	}
@@ -102,7 +102,7 @@ public class utilities {
 		CaseNum = CaseNumber.substring(6, 11)
 		TestObject new_case = WebUI.modifyObjectProperty(findTestObject('Page_MedTel/DIVs/div_Casebutton'), 'xpath', 'equals', '//span[text()="'+CaseNum+'"]', true)
 		while(WebUI.verifyElementPresent(new_case,3,FailureHandling.OPTIONAL)==false){
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_CaseNextPage'))
+			WebUI.click(findTestObject('Page_MedTel/Case Status/button_CaseNextPage'))
 		}
 		WebUI.click(new_case)
 		GlobalVariable.CaseNum2 = CaseNum
@@ -169,23 +169,50 @@ public class utilities {
 		return
 	}
 	@Keyword
-	def confirmCaseCanceled(String caseNum){
+	def confirmCaseStatus(String CaseNumber,String status, Boolean click){
 		// The goal of this keyword is to confirm the status of a case, without clicking it. As long as the case is
 		// present on the page, it can be observed. Current form only checks if a case is canceled, but can be
-		//expanded to confirm any status. 
-		
-		WebUI.scrollToElement(findTestObject('Object Repository/Page_MedTel/Case Status/button_Canceled Cases'),3)
-		WebUI.click(findTestObject('Object Repository/Page_MedTel/Case Status/button_Canceled Cases'))
-		
+		//expanded to confirm any status.
+
+		//status given as "1"-incomplete,"2",-pending override....according to dictionary
+
+		String caseNum = CaseNumber.replaceAll('\\s', '')
+		caseNum = CaseNumber.substring(6, 11)
+
+		Dictionary buttonTypes = new Hashtable()
+		buttonTypes.put("1","Incomplete")
+		buttonTypes.put("2","Pending Override Requests")
+		buttonTypes.put("3","Case Alerts")
+		buttonTypes.put("4","Complete")
+		buttonTypes.put("5","Canceled")
+		buttonTypes.put("6","Closed")
+
+		Dictionary statusTypes = new Hashtable()
+		statusTypes.put("1","INCOMPLETE")
+		statusTypes.put("2","PENDING_OVERRIDE")
+		statusTypes.put("3","ALERT")
+		statusTypes.put("4", "COMPLETE")
+		statusTypes.put("5", "CANCELED")
+		statusTypes.put("6","CLOSED")
+
+		String confirmStatus = statusTypes.get(status)
+		String buttonStatus = buttonTypes.get(status)
+		WebUI.scrollToElement(findTestObject('Object Repository/Page_MedTel/Case Status/button_'+buttonStatus),3)
+		WebUI.click(findTestObject('Object Repository/Page_MedTel/Case Status/button_'+buttonStatus))
+
 		TestObject new_case = WebUI.modifyObjectProperty(findTestObject('Page_MedTel/DIVs/div_Casebutton'), 'xpath', 'equals', '//span[text()="'+caseNum+'"]', true)
 		while(WebUI.verifyElementPresent(new_case,3,FailureHandling.OPTIONAL)==false){
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_CaseNextPage'))
+			WebUI.click(findTestObject('Page_MedTel/Case Status/button_CaseNextPage'))
 		}
-		
+
 		TestObject check_case = WebUI.modifyObjectProperty(findTestObject('Object Repository/Page_MedTel/DIVs/div_Casebutton'), 'xpath', 'equals', '//span[text()="'+caseNum+'"]/ancestor::tr', true)
-		Boolean flag = WebUI.verifyElementAttributeValue(check_case, 'status', 'CANCELED', 3, FailureHandling.STOP_ON_FAILURE)
+		Boolean flag = WebUI.verifyElementAttributeValue(check_case, 'status', confirmStatus, 3, FailureHandling.STOP_ON_FAILURE)
 		System.out.println(flag)
 		if (flag == true){
+			if (click ==true){
+				WebUI.click(new_case)
+				return
+			}
 			return
 		}
 		else{
@@ -193,6 +220,7 @@ public class utilities {
 			// I'm going to try a broken line to see if it will cause the test case to fail...
 			WebUI.click(findTestObject('BREAK'),FailureHandling.STOP_ON_FAILURE)
 		}
+
 		return
 	}
 

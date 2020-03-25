@@ -31,5 +31,5 @@ CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariabl
 
 CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNumber, true)
 
-WebUI.verifyElementNotClickable(findTestObject('Page_MedTel/button_Cancel Case'))
+WebUI.verifyElementNotClickable(findTestObject('Page_MedTel/BUTTONS/button_Cancel Case'))
 

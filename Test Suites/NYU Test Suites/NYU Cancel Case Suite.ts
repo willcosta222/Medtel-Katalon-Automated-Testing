@@ -17,6 +17,12 @@
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 1</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>6fec24f0-963a-4413-9bff-aa2d4fd578c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 2 - Manager</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>cacb839a-edba-407f-890e-da568d50da06</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -27,6 +33,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 2</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>205c4eff-a2de-444d-b4f7-5c0f4109508e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 3 - Surgeon</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0dfaea41-0b38-4a7f-b113-8d7c3efb8e91</guid>
@@ -45,6 +57,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Rep</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>344deaa7-e058-48c2-85f4-b43f641eacb6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 1 - Scheduler</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>11971e3f-666d-4f9b-9d6b-7f0c716e1099</guid>

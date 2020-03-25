@@ -28,13 +28,13 @@ WebUI.sendKeys(findTestObject('Page_MedTel/INPUTS/input_Password_password'), Key
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '54321')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '54321')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss765'))
 
@@ -44,35 +44,35 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '10/12/2001')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '10/12/2001')
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_OTHER'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_NYU Medical Center (Tisch)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'fusion cervi')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'fusion cervi')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_FUSION CERVICAL DISCECTOMY ANTERIOR MULTI'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'fusion spinal cervical po')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'fusion spinal cervical po')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_FUSION SPINAL CERVICAL POSTERIOR MULTI'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22551')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '22551')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_22551 - Arthrodesis anterior interbody _e3716c'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22552')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '22552')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_22552 - Arthrodesis anterior interbody _bb8463'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22600')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '22600')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_22600 - Arthrodesis posterior or poster_b590b3'))
 
@@ -84,7 +84,7 @@ WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed Type 1'))
 
 WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed_Type_Unknown_NYU_SPine'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implant Type_jss987'))
 
@@ -98,7 +98,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_MaxAn Anterior Cervical Plate (
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Approach_Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Approach/div_Anterior'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Approach/div_Anterior'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_From_jss987'))
 
@@ -142,7 +142,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'cloward cerv
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_CLOWARD Cervical Retractor'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Copy to EMR'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Copy to EMR'))
 

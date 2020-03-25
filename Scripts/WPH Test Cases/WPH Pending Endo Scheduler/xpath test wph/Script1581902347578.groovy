@@ -28,13 +28,13 @@ WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_passwor
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
-WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_YearForward'))
+WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button_YearForward'))
 
-WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__MonthForward'))
+WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__MonthForward'))
 
-WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__MonthBackward'))
+WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__MonthBackward'))
 
-WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__YearBackward'))
+WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__YearBackward'))
 
 
 WebUI.closeBrowser()

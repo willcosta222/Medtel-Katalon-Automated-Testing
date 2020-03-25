@@ -28,13 +28,13 @@ WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '32523')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '32523')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site'))
 
@@ -50,7 +50,7 @@ GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Page_MedTel/span-p-li-
 
 GlobalVariable.CaseDate = WebUI.getText(findTestObject('Page_MedTel/span-p-li-misc/Case Date'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '05/11/1973')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '05/11/1973')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Gender_jss987'))
 
@@ -58,35 +58,35 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_F'))
 
 CustomKeywords.'medtel.utilities.utilities.inputHeight'('5', '5')
 
-WebUI.setText(findTestObject('Page_MedTel/Height and Weight/input__Weight'), '183')
+WebUI.setText(findTestObject('Page_MedTel/Stats - Height and Weight/input__Weight'), '183')
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_OTHER'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Surgical Location/div_NYU Langone Orthopedic Hospital (LOH)'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Surgical Location/div_NYU Langone Orthopedic Hospital (LOH)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'revision hip total')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'revision hip total')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_REVISION HIP TOTAL'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '27134')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '27134')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_27134 - Revision of total hip arthropla_f808a5'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '20985')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '20985')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_20985 - Computer-assisted surgical navi_439a55'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Laterality/div_Laterality'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Left'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'), 'mdm')
 
@@ -102,11 +102,15 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'intellijoint
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Intellijoint HIP - Intellijoint Surgica_30fccb'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Copy to EMR'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Copy to EMR'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
+
+WebUI.click(findTestObject('Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.closeBrowser()
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[9]</value>
+         <value>//span[text()='Yes']/parent::node()</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

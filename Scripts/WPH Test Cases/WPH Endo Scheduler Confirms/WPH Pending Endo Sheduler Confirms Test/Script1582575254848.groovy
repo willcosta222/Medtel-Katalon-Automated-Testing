@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Pending Endo Scheduler0'))
 
 // Read Current Date on Calendar format (i.e, January 2020)
-CalendarDate = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+CalendarDate = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 
 // Format Calendar Date w/p white spaces/spaces
 CalendarDate = CalendarDate.replaceAll('\\s', '')
@@ -59,9 +59,9 @@ CaseDay = GlobalVariable.CaseDate.substring(3, 5)
 
 // Check For Correct Year
 while (year != CaseYear) {
-    WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_YearForward'))
+    WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button_YearForward'))
 
-    new_date = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+    new_date = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 
     NDlength = new_date.length()
 
@@ -123,9 +123,9 @@ System.out.println(CaseMonth)
 
 //Check for Correct Month
 while (month != CaseMonth) {
-    WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__MonthForward'))
+    WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__MonthForward'))
 
-    new_date = WebUI.getText(findTestObject('Page_MedTel/BUTTONS/button_CalendarDate'))
+    new_date = WebUI.getText(findTestObject('Page_MedTel/Calendar Objects/button_CalendarDate'))
 
     NDlength = new_date.length()
 
@@ -135,7 +135,7 @@ while (month != CaseMonth) {
 }
 
 if (year != CaseYear) {
-    WebUI.click(findTestObject('Page_MedTel/BUTTONS/button__YearBackward'))
+    WebUI.click(findTestObject('Page_MedTel/Calendar Objects/button__YearBackward'))
 }
 
 System.out.println(CaseYear)
@@ -147,7 +147,7 @@ System.out.println(CaseMonth)
 System.out.println(month)
 
 //Day Test
-dayOne = WebUI.getText(findTestObject('Object Repository/Page_MedTel/Calendar Days/button_CalendarDay1'))
+dayOne = WebUI.getText(findTestObject('null'))
 
 int dayCount = 1
 
@@ -208,7 +208,7 @@ CaseNum = GlobalVariable.CaseNumber.replaceAll('\\s', '')
 
 CaseNum = GlobalVariable.CaseNumber.substring(6, 11)
 
-lastCase = WebUI.getText(findTestObject('Object Repository/Page_MedTel/Case Number List/div_CaseListLast'))
+lastCase = WebUI.getText(findTestObject('null'))
 
 n = 1
 
@@ -217,18 +217,18 @@ System.out.println(lastCase)
 System.out.println(CaseNum)
 
 if (CaseNum == lastCase) {
-    WebUI.click(findTestObject('Object Repository/Page_MedTel/Case Number List/div_CaseListLast'))
+    WebUI.click(findTestObject('null'))
 }
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Schedule Confirmed_jss1168'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Confirmed'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-RM'), '111')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-RM'), '111')
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 

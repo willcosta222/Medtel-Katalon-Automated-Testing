@@ -28,17 +28,17 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-FN'), 'Jane')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-FN'), 'Jane')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-LN'), 'Doe')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-LN'), 'Doe')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '04/08/1987')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '04/08/1987')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss803'))
 
@@ -94,7 +94,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Insurance_Second_Type_MST'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_SELF PAY'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
@@ -104,7 +104,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/Input surgical assistance'), 's
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Shia (Stage-MS) Derek - Orthopedics'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '22558')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '22558')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_22558 - Arthrodesis anterior interbody _852ab9'))
 
@@ -120,11 +120,11 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Admission Type'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Outpatient (Same Day)'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Scheduling'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '10:00 aM')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:00 aM')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implant Type_jss1014'))
 

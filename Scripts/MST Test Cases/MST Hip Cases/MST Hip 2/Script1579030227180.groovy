@@ -28,17 +28,17 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-FN'), 'Jane')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-FN'), 'Jane')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-LN'), 'Doe')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-LN'), 'Doe')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '04/08/1987')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '04/08/1987')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss835'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss835'))
 
@@ -76,11 +76,11 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spanish'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Feet_css-amjubi-indicatorContainer'))
 
-WebUI.click(findTestObject('Page_MedTel/Height and Weight/Height-Feet Drop Down Menu/div_5_feet'))
+WebUI.click(findTestObject('Page_MedTel/Stats - Height and Weight/Height-Feet Drop Down Menu/div_5_feet'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Inches_css-amjubi-indicatorContainer'))
 
-WebUI.click(findTestObject('Page_MedTel/Height and Weight/Height-inches Drop Down Menu/div_5_inches'))
+WebUI.click(findTestObject('Page_MedTel/Stats - Height and Weight/Height-inches Drop Down Menu/div_5_inches'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Financial'))
 
@@ -108,7 +108,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_MidState Medical Center'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '2713')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '2713')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_27130 - Arthroplasty acetabular and pro_dd70c6'))
 
@@ -116,7 +116,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-DS'), 'm25.55')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_M25551 - PAIN IN RIGHT HIP'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Laterality/div_Laterality'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Right'))
 
@@ -134,9 +134,9 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgery Admit'))
 
 WebUI.click(findTestObject('Page_MedTel/SVGs/svg_Procedure Details_jss915'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-TIME'), '09:00 AM')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '09:00 AM')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'), 'bir')
 

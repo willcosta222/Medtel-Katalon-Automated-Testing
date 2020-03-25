@@ -32,7 +32,7 @@ CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNu
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 CustomKeywords.'medtel.utilities.utilities.removeImplant'('4WEB Anterior Spine')
 
@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_CD Horizon Legacy 55 Spinal Sys
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Approach_jss1631'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Posterior'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_From_jss1631'))
 
@@ -64,9 +64,9 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_No Implant Required'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Approach_jss1631'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Approach/div_Anterior'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Approach/div_Anterior'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Laterality/div_Laterality_jss1631'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality_jss1631'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Right'))
 

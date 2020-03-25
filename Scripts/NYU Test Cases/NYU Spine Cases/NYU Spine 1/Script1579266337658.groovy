@@ -18,9 +18,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://patch-stage.medtel.com/login')
+WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'vianka.dejesus@nyumc.org')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -28,13 +28,13 @@ WebUI.sendKeys(findTestObject('Page_MedTel/INPUTS/input_Password_password'), Key
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '12345')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '12345')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Bendo (Stage-NYU), John'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss765'))
 
@@ -44,29 +44,29 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '09/10/1990')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '09/10/1990')
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_OTHER'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Surgical Location/div_NYU Kimmel Pavilion'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Surgical Location/div_NYU Kimmel Pavilion'))
 
-WebUI.click(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'ml')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'ml')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_MLD'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '63030')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '63030')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_63030 - Laminotomy (hemilaminectomy) wi_97fc56'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '69990')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '69990')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_69990 - Microsurgical techniques requir_d2bfd3'))
 
@@ -78,7 +78,7 @@ WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed Type 1'))
 
 WebUI.click(findTestObject('Page_MedTel/NYU/Bed Types NYU Spine/Bed_Type_Unknown_NYU_SPine'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Implants and Products'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
 WebUI.click(findTestObject('Page_MedTel/INPUTS/input__IMP-DESC'))
 
@@ -88,9 +88,9 @@ WebUI.click(findTestObject('Page_MedTel/Yes-No Options/div_No Implant Required')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Approach_Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Posterior'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_MedTel/Hip Laterality/div_Laterality'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/Hip Laterality/div_Laterality'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Left'))
 
@@ -116,7 +116,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'), 'wilson fr')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Wilson Frame'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Copy to EMR'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Copy to EMR'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Confirm Copy to EMR'))
 

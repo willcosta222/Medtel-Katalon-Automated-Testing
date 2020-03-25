@@ -27,13 +27,13 @@ WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-MRN'), '12345')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '12345')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Quirno (Stage-NYU) Martin'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__SCH-PD'), '12/31/2020')
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss765'))
 
@@ -43,29 +43,29 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PD-DOB'), '09/10/1990')
+WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '09/10/1990')
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_Insurance Type_NYU'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_OTHER'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Procedure Details'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgical Location'))
 
-WebUI.click(findTestObject('Page_MedTel/NYU/NYU Surgical Location/div_NYU Kimmel Pavilion'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Surgical Location/div_NYU Kimmel Pavilion'))
 
-WebUI.click(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'))
+WebUI.click(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-PROD'), 'ml')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-PROD (1)'), 'ml')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_MLD'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '63030')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '63030')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_63030 - Laminotomy (hemilaminectomy) wi_97fc56'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRD-CPT'), '69990')
+WebUI.setText(findTestObject('Page_MedTel/Procedure/input__PRD-CPT'), '69990')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_69990 - Microsurgical techniques requir_d2bfd3'))
 
