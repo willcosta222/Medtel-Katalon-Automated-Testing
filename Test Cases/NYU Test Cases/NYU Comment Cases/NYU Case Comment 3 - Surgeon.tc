@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Surgeon logs in, Opens existing case, Adds comment, Logs out</description>
    <name>NYU Case Comment 3 - Surgeon</name>
    <tag></tag>
    <comment></comment>

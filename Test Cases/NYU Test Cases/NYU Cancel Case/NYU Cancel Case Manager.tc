@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Manager Logs in, Opens Existing Case, Cancels Case, Confirms Case Status, Logs Out</description>
    <name>NYU Cancel Case Manager</name>
    <tag></tag>
    <comment></comment>

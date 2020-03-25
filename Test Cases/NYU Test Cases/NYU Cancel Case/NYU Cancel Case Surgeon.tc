@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Surgeon Logs in, Opens Existing Case, Cancels Case, Confirms Case Status, Logs out</description>
    <name>NYU Cancel Case Surgeon</name>
    <tag></tag>
    <comment></comment>

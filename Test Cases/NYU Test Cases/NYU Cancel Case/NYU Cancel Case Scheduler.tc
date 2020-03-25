@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Scheduler Logs in, Opens existing case, Cancels Case, Confirms Case Status, Logs Out</description>
    <name>NYU Cancel Case Scheduler</name>
    <tag></tag>
    <comment></comment>

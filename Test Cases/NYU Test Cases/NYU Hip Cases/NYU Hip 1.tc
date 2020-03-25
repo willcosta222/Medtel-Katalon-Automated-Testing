@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Manager Logs in, creates Case, Logs out</description>
    <name>NYU Hip 1</name>
    <tag></tag>
    <comment></comment>
