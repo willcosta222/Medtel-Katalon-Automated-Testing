@@ -20,13 +20,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jkuehl@ct-ortho.com')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.sendKeys(findTestObject('Page_MedTel/INPUTS/input_Password_password'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_New Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_New Case'))
 
 WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-FN'), 'John')
 
@@ -36,7 +36,7 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '09/10/1
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Pravda (Stage-MS) Jeffrey'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
@@ -46,7 +46,7 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Create Case'))
 
 GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Page_MedTel/span-p-li-misc/Case Number'))
 
@@ -78,7 +78,7 @@ WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_SELF PAY'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Does Patient have Secondary Insurance_jss1014'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Yes-No Options/div_No'))
+WebUI.click(findTestObject('Page_MedTel/Yes-No Options/div_No'))
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Procedure Details'))
 
@@ -100,23 +100,25 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_S33 - DISLOCATION AND SPRAIN OF
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_CPT CodesCPT Codes22558 - Arthrodesis a_25b174'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/Input_Anesthesia'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/Input_Anesthesia'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/div_Spinal'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/div_Spinal'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/Input_Anesthesia'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/Input_Anesthesia'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/div_General'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/div_General'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/Input_Anesthesia'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/Input_Anesthesia'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Anesthesia Type/div_BB'))
+WebUI.click(findTestObject('Page_MedTel/Anesthesia Type/div_BB'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Admission Type'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Surgery Admit'))
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
+
+WebUI.click(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '09:00 aM')
 
@@ -146,9 +148,13 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Clinical'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Pre-admission Testing at Midstate Medic_8aeb6d'))
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/Yes-No Options/div_Yes'))
+WebUI.click(findTestObject('Page_MedTel/Yes-No Options/div_Yes'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/div_Logout'))
+
+not_run: WebUI.closeBrowser()
 

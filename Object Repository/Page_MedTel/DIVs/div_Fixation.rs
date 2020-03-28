@@ -6,12 +6,12 @@
    <elementGuidId>1678cd1b-dfc5-465b-97f6-fe6941a39d63</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='react-select-7-option-0']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id = 'react-select-25-option-0' and (text() = 'Fixation' or . = 'Fixation')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*/text()[normalize-space(.)='Fixation']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

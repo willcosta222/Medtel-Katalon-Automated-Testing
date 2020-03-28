@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jkuehl@ct-ortho.com')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -95,6 +95,10 @@ WebUI.click(findTestObject('Page_MedTel/INPUTS/input__IMP-ANC'))
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Incisional Wound Vac'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.closeBrowser()
 

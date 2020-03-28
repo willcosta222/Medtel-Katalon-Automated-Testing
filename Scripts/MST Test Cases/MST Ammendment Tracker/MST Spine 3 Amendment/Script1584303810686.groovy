@@ -100,5 +100,9 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Incisional Wound Vac'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/div_Logout'))
+
 WebUI.closeBrowser()
 

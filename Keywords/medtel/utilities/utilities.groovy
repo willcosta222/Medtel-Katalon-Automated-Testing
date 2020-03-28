@@ -32,6 +32,7 @@ public class utilities {
 	def medtelfindCalendarDate(String option) {
 		// input will be CaseDate Global Variable
 		// format CaseDate Global Variable
+		System.out.println(option)
 		option = option.replaceAll('D.O.S: ', '')
 		String CaseYear = option.substring(8, 10)
 		String CaseMonth = option.substring(0, 2)
@@ -93,10 +94,10 @@ public class utilities {
 	@Keyword
 	def medtelfindCase(String CaseNumber, Boolean Complete) {
 		if (Complete == true) {
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Complete Cases'))
+			WebUI.click(findTestObject('Page_MedTel/Case Status/button_Complete'))
 		}
 		else {
-			WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Incomplete Cases'))
+			WebUI.click(findTestObject('Page_MedTel/Case Status/button_Incomplete'))
 		}
 		String CaseNum = CaseNumber.replaceAll('\\s', '')
 		CaseNum = CaseNumber.substring(6, 11)
@@ -221,6 +222,41 @@ public class utilities {
 			WebUI.click(findTestObject('BREAK'),FailureHandling.STOP_ON_FAILURE)
 		}
 
+		return
+	}
+	@Keyword
+	def confirmCommentPresent(Integer numberOfComments){
+		Integer n=1
+		while(n!=numberOfComments+1){
+			String x = n.toString()
+			TestObject comment = WebUI.modifyObjectProperty(findTestObject('Object Repository/Page_MedTel/Case Navigation/Comments/table_commentEntry'),'xpath','equals','//th[text()="Comment"]/ancestor::table/tbody/tr['+x+']',true)
+			TestObject commentText = WebUI.modifyObjectProperty(findTestObject('Object Repository/Page_MedTel/Case Navigation/Comments/table_commentEntry'),'xpath','equals','//th[text()="Comment"]/ancestor::table/tbody/tr['+x+']/td[1]',true)
+
+			if(WebUI.verifyElementPresent(comment,3,FailureHandling.OPTIONAL)==true){
+				String text =WebUI.getText(commentText)
+				if(text != 'There are no comments on this case'){
+					n=n+1
+				}
+				else{
+					System.out.println("FLAG: Comment Not Present! Trying Refresh.")
+					try {
+						WebUI.refresh()
+						WebUI.verifyElementPresent(comment,3,FailureHandling.OPTIONAL)
+					} catch (Exception e) {
+						WebUI.click(findTestObject('BREAK'),FailureHandling.STOP_ON_FAILURE)
+					}
+				}
+			}
+			else{
+				System.out.println("FLAG: Comment Not Present! Trying Refresh.")
+				try {
+					WebUI.refresh()
+					WebUI.verifyElementPresent(comment,3,FailureHandling.OPTIONAL)
+				} catch (Exception e) {
+					WebUI.click(findTestObject('BREAK'),FailureHandling.STOP_ON_FAILURE)
+				}
+			}
+		}
 		return
 	}
 

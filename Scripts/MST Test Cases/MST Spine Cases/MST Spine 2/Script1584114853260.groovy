@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jeffreyp@comcllc.com')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -36,7 +36,7 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '04/08/1
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Pravda (Stage-MS) Jeffrey'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
@@ -159,6 +159,10 @@ WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRE-OP-MED-LN'), 'Stark'
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input__PRE-OP-MED-PN'), '(444) 444-4444')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Save Case'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.closeBrowser()
 

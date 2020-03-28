@@ -36,7 +36,7 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '07/03/1
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Pravda (Stage-MS) Jeffrey'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
@@ -164,6 +164,10 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Pre-admission Testing at Midsta
 WebUI.click(findTestObject('Object Repository/Page_MedTel/Yes-No Options/div_Yes'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/button_UserName'))
+
+WebUI.click(findTestObject('Object Repository/Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.closeBrowser()
 

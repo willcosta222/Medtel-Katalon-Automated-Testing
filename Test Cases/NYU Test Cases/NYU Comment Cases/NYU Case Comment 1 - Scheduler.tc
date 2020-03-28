@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Scheduler Logs in, opens existing Case, Adds Comment, Logs out</description>
-   <name>NYU Case Comment 1 - Scheduler</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2f3f6088-8944-4ec4-91a0-25baf33adf85</testCaseGuid>
-</TestCaseEntity>
