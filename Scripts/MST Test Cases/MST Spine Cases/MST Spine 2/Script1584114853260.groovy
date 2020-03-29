@@ -42,11 +42,11 @@ WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020'
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss803'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'SPine')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'Spine')
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
+WebUI.click(findTestObject('Object Repository/Page_MedTel/DIVs/div_Spine'))
 
-WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Create Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Create Case'))
 
 GlobalVariable.CaseNumber = WebUI.getText(findTestObject('Page_MedTel/span-p-li-misc/Case Number'))
 
@@ -122,7 +122,9 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Outpatient (Same Day)'))
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:00 aM')
+WebUI.click(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:00 AM')
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 

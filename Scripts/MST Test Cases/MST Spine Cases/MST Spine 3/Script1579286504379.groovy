@@ -123,7 +123,9 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Outpatient (Same Day)'))
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Scheduling'))
 
-WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:30 aM')
+WebUI.click(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-TIME (1)'), '10:30 AM')
 
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Implants and Products'))
 
