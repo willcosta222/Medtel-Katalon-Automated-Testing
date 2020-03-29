@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://stage.medtel.com')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jane.frattini@nyumc.org')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -32,7 +32,7 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), '32523')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss765'))
 
-WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Youm (Stage-NYU), Thomas'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Slover (Stage-NYU), James'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 

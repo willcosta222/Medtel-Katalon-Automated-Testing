@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jkuehl@ct-ortho.com')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'Shirley.Warner@hhchealth.org')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
