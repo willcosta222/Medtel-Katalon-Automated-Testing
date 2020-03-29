@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Scheduler/Surgeon Logs in, opens existing Case, Adds Comment, Duplicate comment, Save/Refresh, Logs out</description>
+   <name>NYU Case Comment - Scheduler-Surgeon</name>
+   <tag></tag>
+   <comment>3
+6</comment>
+   <testCaseGuid>2f3f6088-8944-4ec4-91a0-25baf33adf85</testCaseGuid>
+</TestCaseEntity>

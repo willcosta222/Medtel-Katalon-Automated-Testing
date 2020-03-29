@@ -31,11 +31,11 @@ CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNu
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
 
-WebUI.click(findTestObject('Page_MedTel/Case Navigation/div_Comments'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/Comments/div_Comments'))
 
-WebUI.setText(findTestObject('Page_MedTel/Case Navigation/input__Comment'), 'SURGEON COMMENT 1')
+WebUI.setText(findTestObject('Page_MedTel/Case Navigation/Comments/input__Comment'), 'SURGEON COMMENT 1')
 
-WebUI.click(findTestObject('Page_MedTel/Case Navigation/button_Add Comment'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/Comments/button_Add Comment'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 

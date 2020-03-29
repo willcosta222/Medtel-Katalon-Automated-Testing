@@ -6,14 +6,18 @@
    <elementGuidId>c12a09c6-52d6-4285-aa01-63e88e6936ff</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Spine' or . = 'Spine')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Spine']/parent::*</value>
+         <value>//div[text()='Spine']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -41,7 +45,7 @@
       <value>menuitem</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

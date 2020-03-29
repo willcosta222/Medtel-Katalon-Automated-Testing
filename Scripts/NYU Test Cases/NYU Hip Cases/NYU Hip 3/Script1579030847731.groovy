@@ -128,5 +128,5 @@ WebUI.click(findTestObject('Page_MedTel/Medtel Header/button_UserName'))
 
 WebUI.click(findTestObject('Page_MedTel/Medtel Header/div_Logout'))
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

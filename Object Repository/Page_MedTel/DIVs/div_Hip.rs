@@ -6,12 +6,12 @@
    <elementGuidId>ba049725-0ee1-4f1f-8905-5b9e15485803</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='react-select-3-option-14']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//div[(text() = 'Hip' or . = 'Hip')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='react-select-3-option-14']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

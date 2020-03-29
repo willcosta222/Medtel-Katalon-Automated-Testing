@@ -3,83 +3,17 @@
    <description></description>
    <name>button_CaseNextPage</name>
    <tag></tag>
-   <elementGuidId>2893039f-65ec-4d38-9f58-b4013becb4d6</elementGuidId>
+   <elementGuidId>eca3e072-d264-4885-adb2-c16047617e36</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Rows per page:'])[1]/following::button[2]</value>
+         <value>//td/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>jss355 jss1967 jss1968</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;jss373 sc-htoDjs gOIOCa&quot;]/div[@class=&quot;jss374 jss413 jss422 jss437 jss452&quot;]/div[@class=&quot;sc-jnlKLf ljlShD rbc-calendar&quot;]/div[@class=&quot;sc-cIShpX eYqrkl&quot;]/table[@class=&quot;jss2050 sc-kafWEX hhNUHV&quot;]/tfoot[@class=&quot;jss2097&quot;]/tr[@class=&quot;jss2052 jss2056&quot;]/td[@class=&quot;jss2057 jss2060 jss2098&quot;]/div[@class=&quot;jss325 jss327 jss326 jss2099&quot;]/div[@class=&quot;jss2107&quot;]/button[@class=&quot;jss355 jss1967 jss1968&quot;]</value>
-   </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//button[@type='button'])[53]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div/div[2]/table/tfoot/tr/td/div/div[3]/button</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status: All Cases | 51-66 of 66'])[1]/following::button[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rows per page:'])[1]/following::button[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//td/div/div[3]/button</value>
-   </webElementXpaths>
 </WebElementEntity>

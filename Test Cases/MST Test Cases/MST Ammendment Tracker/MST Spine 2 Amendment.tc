@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Surgeon Opens Existing Case, Amends Case, Saves, Logs out</description>
    <name>MST Spine 2 Amendment</name>
    <tag></tag>
    <comment></comment>
