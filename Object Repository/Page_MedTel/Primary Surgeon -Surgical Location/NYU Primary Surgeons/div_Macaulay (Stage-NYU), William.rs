@@ -3,11 +3,11 @@
    <description></description>
    <name>div_Macaulay (Stage-NYU), William</name>
    <tag></tag>
-   <elementGuidId>aed219cf-e6c0-419b-9c5c-7cd6264c5eac</elementGuidId>
+   <elementGuidId>891c460d-226b-4835-93da-d0ce08b288e5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Macaulay (Stage-NYU), William']/parent::*</value>
+         <value>//*/text()[normalize-space(.)='Macaulay (Stage-NYU), John']/William::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

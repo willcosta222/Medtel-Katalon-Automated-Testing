@@ -3,11 +3,11 @@
    <description></description>
    <name>div_Slover (Stage-NYU), James</name>
    <tag></tag>
-   <elementGuidId>6e2c7969-7602-49bb-825f-ecc953d0fd3f</elementGuidId>
+   <elementGuidId>44bfbc5a-f59b-455a-bd9f-295e174445f6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Slover (Stage-NYU), James']/parent::*</value>
+         <value>//*/text()[normalize-space(.)='Bendo (Stage-NYU), John']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
