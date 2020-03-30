@@ -22,6 +22,10 @@ WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
 
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'deirdre.corporan@nyumc.org')
+
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'jane.frattini@nyumc.org')
+
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
@@ -33,6 +37,10 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-MRN'), 'HIP OVE
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss919'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Youm (Stage-NYU) Thomas'))
+
+not_run: WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Macaulay (Stage-NYU), William'))
+
+not_run: WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/NYU Primary Surgeons/div_Slover (Stage-NYU), James'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
