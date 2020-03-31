@@ -25,25 +25,25 @@
    <testCaseLink>
       <guid>6649523f-3156-4d30-b180-a2a1bf1e9c89</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/MST Test Cases/MST Spine Cases/MST Spine 2</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>96b8639b-4055-4513-b428-9a562667e60a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/MST Test Cases/MST Ammendment Tracker/MST Spine 2 Amendment</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c85bd09e-2e8b-483b-bb3a-61b624a1be56</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/MST Test Cases/MST Spine Cases/MST Spine 3</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>50a56e3c-e9e3-4816-a00e-f0997ff2d81c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/MST Test Cases/MST Ammendment Tracker/MST Spine 3 Amendment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

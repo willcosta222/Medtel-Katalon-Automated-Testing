@@ -17,13 +17,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://stage.medtel.com')
+WebUI.navigateToUrl('https://stage.medtel.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'thomas.youm@nycmc.org')
+WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
 
-not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'william.macaulay@nyumc.org')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'deirdre.corporan@nyumc.org')
 
-not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'james.slover@nycmc.org')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'jane.frattini@nyumc.org')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -33,19 +33,19 @@ CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariabl
 
 CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNumber, true)
 
-WebUI.click(findTestObject('Object Repository/Page_MedTel/BUTTONS/button_Cancel Case'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
 
-WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Yes'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/Comments/div_Comments'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Page_MedTel/BUTTONS/button_Cancel Case'))
+WebUI.setText(findTestObject('Page_MedTel/Case Navigation/Comments/input__Comment'), 'SCHEDULER COMMENT 1')
 
-WebUI.verifyElementNotClickable(findTestObject('Page_MedTel/BUTTONS/button_Amend Case'))
+WebUI.click(findTestObject('Page_MedTel/Case Navigation/Comments/button_Add Comment'))
 
-WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/img_Connect_header-logo'))
+WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
 
-CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
+WebUI.refresh()
 
-CustomKeywords.'medtel.utilities.utilities.confirmCaseStatus'(GlobalVariable.CaseNumber, '5', false)
+CustomKeywords.'medtel.utilities.utilities.confirmCommentPresent'(1)
 
 WebUI.click(findTestObject('Page_MedTel/Medtel Header/button_UserName'))
 

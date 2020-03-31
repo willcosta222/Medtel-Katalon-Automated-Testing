@@ -22,6 +22,10 @@ WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathy@rycortho.com')
 
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'deirdre.corporan@nyumc.org')
+
+not_run: WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'jane.frattini@nyumc.org')
+
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Login'))
@@ -60,9 +64,15 @@ WebUI.click(findTestObject('Page_MedTel/Medtel Header/div_Logout'))
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'thomas.youm@nycmc.org')
 
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'william.macaulay@nyumc.org')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'james.slover@nycmc.org')
+
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Login'))
+
+not_run: WebUI.click(findTestObject('Page_MedTel/Approver-Surgeon Toggle'))
 
 CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Spine']/parent::*</value>
+         <value>//div[@id='PRD-SITE']/div/div/div[2]/div/div[text()='Spine']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

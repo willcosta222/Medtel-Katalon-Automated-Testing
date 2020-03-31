@@ -21,6 +21,10 @@ WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Email_email'), 'thomas.youm@nycmc.org')
 
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'william.macaulay@nyumc.org')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'james.slover@nycmc.org')
+
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
@@ -38,6 +42,10 @@ WebUI.setText(findTestObject('Page_MedTel/Case Navigation/Comments/input__Commen
 WebUI.click(findTestObject('Page_MedTel/Case Navigation/Comments/button_Add Comment'))
 
 WebUI.click(findTestObject('Page_MedTel/BUTTONS/button_Save Case'))
+
+WebUI.refresh()
+
+CustomKeywords.'medtel.utilities.utilities.confirmCommentPresent'(1)
 
 WebUI.click(findTestObject('Page_MedTel/Medtel Header/button_UserName'))
 

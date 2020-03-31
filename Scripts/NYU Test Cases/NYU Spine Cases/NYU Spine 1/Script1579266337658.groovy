@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://stage.medtel.com/login')
+WebUI.navigateToUrl('https://stage.medtel.com')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'vianka.dejesus@nyumc.org')
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>NYU Regression Comment Suite</name>
+   <name>NYU Carols Case Comment Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,63 +9,63 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>904a206e-c572-4bb7-a542-0fe06ccc70c0</testSuiteGuid>
+   <testSuiteGuid>55f19edf-ba2b-4ef0-84aa-b20b582e820f</testSuiteGuid>
    <testCaseLink>
-      <guid>b8ad7a37-7469-4c31-a864-18899fb42aef</guid>
+      <guid>db2d0b67-5a75-4be9-920e-00d9945540cc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 3</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>42b806db-5c0c-4937-8e2a-41dfd11ebee1</guid>
+      <guid>c0f99e5d-19c7-4072-8308-ffe2337da71e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 1 - Scheduler</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>24b66d7f-76ac-4a11-adc4-8be43d932496</guid>
+      <guid>593fc2d3-29fb-4b21-a4eb-d16edd723dbe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 1</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c6161e43-b08d-4665-bb6a-2795a861a8b3</guid>
+      <guid>bff83f33-5a79-41ab-babe-31abcf22c624</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 2 - Manager</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>38c35342-bc39-4c65-b8d8-ce4f6fcbf3d6</guid>
+      <guid>02a1df2b-7986-4a59-b1d3-9b4ce6e29efd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 2</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>bad80a46-7fb5-4401-95de-b98e72f016d1</guid>
+      <guid>61933661-3509-4e7e-bc09-4180947378bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment 3 - Surgeon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee9e60d4-e437-4896-897c-2886f1261eb7</guid>
+      <guid>68f6806d-834c-4508-8bd3-827ea3abe54c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 3</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6e00c3f6-4020-42f6-90c7-954d1d0ea5ff</guid>
+      <guid>30b8d074-227d-4344-97d8-53c06fbbff0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment - Scheduler-Surgeon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>759b2cf8-3d99-4320-b5af-63917df93fe4</guid>
+      <guid>4300d81e-2ec8-4abb-9583-8cd658708b6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Hip Cases/NYU Hip 1</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1b315d9c-3927-4de1-a8eb-f96624fa932b</guid>
+      <guid>8f2ebae2-f61e-446f-b860-d19035a6163e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/NYU Test Cases/NYU Comment Cases/NYU Case Comment - Manager-Rep</testCaseId>
