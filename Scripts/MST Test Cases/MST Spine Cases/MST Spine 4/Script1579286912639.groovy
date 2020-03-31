@@ -18,9 +18,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://patch-stage.medtel.com/login')
+WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'esollami@ct-ortho.com')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'rfaticone@ct-ortho.com')
 
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
@@ -36,7 +40,7 @@ WebUI.setText(findTestObject('Page_MedTel/Demographics/input__PD-DOB'), '10/03/1
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_Daigneault (Stage-MS) John'))
+WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Pravda (Stage-MS) Jeffrey'))
 
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
@@ -70,7 +74,7 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Financial'))
 
 WebUI.click(findTestObject('Page_MedTel/Insurance Types/MST Insurance/div_Insurance Type_MST'))
 
-WebUI.click(findTestObject('Page_MedTel/DIVs/div_SELF PAY'))
+WebUI.click(findTestObject('Page_MedTel/Insurance Types/div_SELF PAY'))
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Does Patient have Secondary Insurance_jss1014'))
 

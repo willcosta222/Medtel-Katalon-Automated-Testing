@@ -3,6 +3,6 @@
    <description>Surgeon logs in, Opens existing case, Adds comment, Logs out</description>
    <name>NYU Case Comment 3 - Surgeon</name>
    <tag></tag>
-   <comment></comment>
+   <comment>1</comment>
    <testCaseGuid>0fe4b488-856b-4857-bb5e-0c1a01048886</testCaseGuid>
 </TestCaseEntity>

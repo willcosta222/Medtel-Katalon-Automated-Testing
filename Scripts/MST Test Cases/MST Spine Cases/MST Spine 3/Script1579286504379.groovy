@@ -22,6 +22,10 @@ WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'cathys@comcllc.com')
 
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'esollami@ct-ortho.com')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'rfaticone@ct-ortho.com')
+
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))

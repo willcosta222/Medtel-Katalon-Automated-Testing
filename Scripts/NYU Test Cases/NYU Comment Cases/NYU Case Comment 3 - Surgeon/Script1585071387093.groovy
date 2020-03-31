@@ -29,6 +29,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_MedTel/INPUTS/inpu
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
 
+not_run: WebUI.click(findTestObject('Page_MedTel/Approver-Surgeon Toggle'))
+
 CustomKeywords.'medtel.utilities.utilities.medtelfindCalendarDate'(GlobalVariable.CaseDate)
 
 CustomKeywords.'medtel.utilities.utilities.medtelfindCase'(GlobalVariable.CaseNumber, true)

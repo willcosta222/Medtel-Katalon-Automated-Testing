@@ -22,6 +22,10 @@ WebUI.navigateToUrl('https://stage.medtel.com/login')
 
 WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jeffreyp@comcllc.com')
 
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'alahav500@gmail.com')
+
+not_run: WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Email_email'), 'jackjpdmd@aol.com')
+
 WebUI.setEncryptedText(findTestObject('Page_MedTel/INPUTS/input_Password_password'), 'p4y+y39Ir5PSroUgyOehqg==')
 
 WebUI.click(findTestObject('Page_MedTel/span-p-li-misc/span_Login'))
@@ -42,7 +46,7 @@ WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020'
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss803'))
 
-WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'SPine')
+WebUI.setText(findTestObject('Page_MedTel/INPUTS/input_Site_react-select-3-input'), 'Spine')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Spine'))
 
