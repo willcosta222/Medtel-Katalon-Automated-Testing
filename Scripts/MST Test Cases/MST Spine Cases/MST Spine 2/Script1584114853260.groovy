@@ -42,6 +42,10 @@ WebUI.click(findTestObject('Page_MedTel/DIVs/div_Primary Surgeon_jss803'))
 
 WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Pravda (Stage-MS) Jeffrey'))
 
+not_run: WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Lahav (Stage-MS) Amit'))
+
+not_run: WebUI.click(findTestObject('Page_MedTel/Primary Surgeon -Surgical Location/MST Primary Surgeons/div_Daigneault (Stage-MS) John'))
+
 WebUI.setText(findTestObject('Page_MedTel/Schedule/input__SCH-PD'), '12/31/2020')
 
 WebUI.click(findTestObject('Page_MedTel/DIVs/div_Site_jss803'))

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='react-select-2-option-0']</value>
+         <value>//*/text()[normalize-space(.)='Daigneault (Stage-MS), John']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
